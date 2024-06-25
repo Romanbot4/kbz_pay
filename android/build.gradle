@@ -28,7 +28,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    if (project.android.hasProperty("namespace")) {
+    if (project.hasProperty("namespace")) {
         namespace 'com.romanbot4.kbz_pay'
     }
 
@@ -75,5 +75,6 @@ android {
 }
 
 dependencies {
-    implementation(name:'kbzsdk_1.1.0', ext:'aar')
+    implementation(name: 'kbzsdk_1.1.0', ext: 'aar')
+//    implementation files('libs\\flutter.jar')
 }

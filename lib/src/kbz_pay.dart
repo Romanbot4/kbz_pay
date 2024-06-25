@@ -31,4 +31,6 @@ abstract interface class KBZPay {
     required String signType,
     required String appScheme,
   });
+
+  void addPaymentStatusListener();
 }

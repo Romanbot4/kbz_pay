@@ -125,10 +125,9 @@ class KBZPayImplementation implements KBZPay {
     required String prepayId,
     required String signKey,
     required String appScheme,
-    required String nounceString, 
+    required String nounceString,
     required String timeStamp,
   }) {
-
     const signType = "SHA256";
     final orderInfo = "appid=$appId&merch_code=$merchantCode&nonce_str="
         "$nounceString&prepay_id=$prepayId&timestamp=$timeStamp&key=$signKey";
@@ -267,5 +266,10 @@ class KBZPayImplementation implements KBZPay {
         }
       }
     });
+  }
+
+  @override
+  void addPaymentStatusListener() {
+    _platform.addPaymentStatusListener();
   }
 }

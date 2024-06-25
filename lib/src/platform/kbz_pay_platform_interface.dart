@@ -24,6 +24,10 @@ abstract class KBZPayPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  void addPaymentStatusListener() {
+    throw UnimplementedError();
+  }
+
   Future<void> startPay(PaymentRequestModel request) {
     throw UnimplementedError();
   }

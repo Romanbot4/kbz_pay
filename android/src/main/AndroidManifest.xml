@@ -1,3 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.romanbot4.kbz_pay">
+
+<!--    <application>-->
+<!--        <activity android:name="com.kbzbank.payment.sdk.callback.CallbackResultActivity"-->
+<!--            android:exported="true" />-->
+<!--    </application>-->
 </manifest>
